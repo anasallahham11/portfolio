@@ -38,7 +38,7 @@
           ></div>
           <!-- Hover glow effect -->
           <div
-            class="absolute inset-0 bg-gradient-to-r from-blue-500/0 via-blue-500/5 to-blue-500/0 opacity-0 stats-glow"
+            class="absolute inset-0 bg-linear-to-r from-blue-500/0 via-blue-500/5 to-blue-500/0 opacity-0 stats-glow"
           ></div>
           <div class="grid grid-cols-2 gap-6 text-center">
             <div
