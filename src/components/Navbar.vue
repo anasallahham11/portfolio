@@ -1,14 +1,24 @@
 <template>
   <header
-    class="fixed top-0 left-0 w-full z-50 backdrop-blur-lg bg-zinc-950/80 border-b border-zinc-800/50"
+    class="fixed top-0 left-0 w-full z-50 backdrop-blur-xl bg-zinc-950/80 border-b border-zinc-800/50"
   >
     <div class="container-custom h-16 flex items-center justify-between">
-      <!-- Logo -->
-      <div class="text-white font-semibold text-lg tracking-tight group">
-        <span class="group-hover:text-blue-400 transition-colors duration-300"
-          >Anas</span
-        ><span class="text-blue-500">.</span>
-      </div>
+      <!-- Logo with Avatar -->
+      <a href="#" class="flex items-center gap-3 group">
+        <div
+          class="w-9 h-9 rounded-full overflow-hidden border-2 border-zinc-700 group-hover:border-blue-500 transition-colors shrink-0"
+        >
+          <img
+            src="/profile.jpg"
+            alt="Anas Allahham"
+            class="w-full h-full object-cover"
+          />
+        </div>
+        <span
+          class="text-white font-bold text-xl tracking-tight whitespace-nowrap group-hover:text-blue-400 transition-colors duration-300"
+          >Anas<span class="text-blue-500">.</span></span
+        >
+      </a>
 
       <!-- Desktop Nav -->
       <nav class="hidden md:flex items-center gap-8 text-sm">
@@ -25,9 +35,22 @@
       <!-- Desktop CTA -->
       <a
         href="#contact"
-        class="hidden md:inline-block px-5 py-2 text-sm bg-blue-500 text-white rounded-lg hover:bg-blue-600 hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300"
+        class="hidden md:inline-flex items-center gap-2 px-5 py-2.5 text-sm bg-blue-500 text-white rounded-xl hover:bg-blue-600 hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300"
       >
         Let's Talk
+        <svg
+          class="w-4 h-4"
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M17 8l4 4m0 0l-4 4m4-4H3"
+          />
+        </svg>
       </a>
 
       <!-- Mobile Menu Button -->
@@ -70,7 +93,7 @@
     <!-- Mobile Menu -->
     <div
       v-if="isMobileMenuOpen"
-      class="md:hidden bg-zinc-950/95 backdrop-blur-lg border-b border-zinc-800"
+      class="md:hidden bg-zinc-950/95 backdrop-blur-xl border-b border-zinc-800"
     >
       <nav class="container-custom py-4 flex flex-col gap-4 text-sm">
         <a
@@ -85,7 +108,7 @@
         <a
           href="#contact"
           @click="isMobileMenuOpen = false"
-          class="px-5 py-2 text-sm bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-all duration-300 text-center"
+          class="inline-flex items-center justify-center gap-2 px-5 py-2.5 text-sm bg-blue-500 text-white rounded-xl hover:bg-blue-600 transition-all duration-300"
         >
           Let's Talk
         </a>

@@ -35,9 +35,17 @@
     <div class="container-custom">
       <!-- Section Header -->
       <div class="text-center mb-20">
-        <p class="text-blue-500 text-sm font-medium mb-4">Projects</p>
-        <h2 class="text-3xl md:text-4xl text-white">Selected Work</h2>
-        <p class="text-zinc-500 mt-4 max-w-2xl mx-auto text-sm">
+        <p
+          class="text-blue-500 text-sm font-medium mb-4 flex items-center justify-center gap-2"
+        >
+          <span class="w-8 h-px bg-blue-500"></span>
+          Projects
+          <span class="w-8 h-px bg-blue-500"></span>
+        </p>
+        <h2 class="text-3xl md:text-4xl text-white mb-4 font-bold">
+          Selected Work
+        </h2>
+        <p class="text-zinc-500 mt-4 max-w-2xl mx-auto text-lg">
           A selection of production-level applications and dashboards I've built
           using modern technologies and clean architecture principles.
         </p>
@@ -56,9 +64,12 @@
             </h3>
 
             <p class="text-zinc-400 leading-relaxed mb-6">
-              A music learning platform with interactive lessons, progress
-              tracking, and real-time feedback. Features include video
-              tutorials, practice exercises, and achievement system.
+              A comprehensive streaming music platform delivering an immersive
+              audio experience. Features trending songs, music videos, artist
+              profiles, and album collections. Includes live events, curated
+              playlists, custom playlist creation, radio streaming, and
+              podcasts. Offers personal library management, favorites, and
+              offline downloads for uninterrupted listening anywhere.
             </p>
 
             <!-- Tech Stack -->
@@ -69,26 +80,16 @@
               >
               <span
                 class="px-3 py-1 bg-zinc-900/80 border border-zinc-800 rounded-full text-zinc-400 text-xs hover:border-blue-500/50 hover:text-blue-400 transition-colors duration-300"
-                >Vue 3</span
-              >
-              <span
-                class="px-3 py-1 bg-zinc-900/80 border border-zinc-800 rounded-full text-zinc-400 text-xs hover:border-blue-500/50 hover:text-blue-400 transition-colors duration-300"
                 >Firebase</span
               >
               <span
                 class="px-3 py-1 bg-zinc-900/80 border border-zinc-800 rounded-full text-zinc-400 text-xs hover:border-blue-500/50 hover:text-blue-400 transition-colors duration-300"
-                >Audio Processing</span
+                >BLoC</span
               >
             </div>
 
             <!-- Buttons -->
             <div class="flex gap-4">
-              <a
-                href="#"
-                class="px-5 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 transform hover:-translate-y-0.5 text-sm"
-              >
-                View Code
-              </a>
               <a
                 href="#"
                 class="px-5 py-2 border border-zinc-700 text-zinc-300 rounded-lg hover:border-blue-500 hover:text-blue-500 hover:bg-zinc-800/50 transition-all duration-300 text-sm"
@@ -115,7 +116,7 @@
               </video>
               <!-- Video overlay for hover -->
               <div
-                class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4 pointer-events-none"
+                class="absolute inset-0 bg-linear-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4 pointer-events-none"
               >
                 <span class="text-white text-sm font-medium">Watch Demo</span>
               </div>
@@ -134,7 +135,7 @@
                   @click="openLightbox('/mockups/doremi1.png')"
                 />
                 <div
-                  class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2 pointer-events-none"
+                  class="absolute inset-0 bg-linear-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2 pointer-events-none"
                 >
                   <span class="text-white text-xs font-medium">Screen 1</span>
                 </div>
@@ -151,7 +152,7 @@
                   @click="openLightbox('/mockups/doremi2.png')"
                 />
                 <div
-                  class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2 pointer-events-none"
+                  class="absolute inset-0 bg-linear-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2 pointer-events-none"
                 >
                   <span class="text-white text-xs font-medium">Screen 2</span>
                 </div>
@@ -168,7 +169,7 @@
                   @click="openLightbox('/mockups/doremi3.jpg')"
                 />
                 <div
-                  class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2 pointer-events-none"
+                  class="absolute inset-0 bg-linear-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2 pointer-events-none"
                 >
                   <span class="text-white text-xs font-medium">Screen 3</span>
                 </div>
@@ -196,7 +197,7 @@
               </video>
               <!-- Video overlay for hover -->
               <div
-                class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4 pointer-events-none"
+                class="absolute inset-0 bg-linear-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4 pointer-events-none"
               >
                 <span class="text-white text-sm font-medium">Watch Demo</span>
               </div>
@@ -215,7 +216,7 @@
                   @click="openLightbox('/mockups/eschool1.png')"
                 />
                 <div
-                  class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2 pointer-events-none"
+                  class="absolute inset-0 bg-linear-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2 pointer-events-none"
                 >
                   <span class="text-white text-xs font-medium">Screen 1</span>
                 </div>
@@ -232,7 +233,7 @@
                   @click="openLightbox('/mockups/eschool2.png')"
                 />
                 <div
-                  class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2 pointer-events-none"
+                  class="absolute inset-0 bg-linear-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2 pointer-events-none"
                 >
                   <span class="text-white text-xs font-medium">Screen 2</span>
                 </div>
@@ -249,7 +250,7 @@
                   @click="openLightbox('/mockups/eschool3.jpg')"
                 />
                 <div
-                  class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2 pointer-events-none"
+                  class="absolute inset-0 bg-linear-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2 pointer-events-none"
                 >
                   <span class="text-white text-xs font-medium">Screen 3</span>
                 </div>
@@ -266,9 +267,14 @@
             </h3>
 
             <p class="text-zinc-400 leading-relaxed mb-6">
-              Educational platform including student and teacher mobile apps,
-              and an admin dashboard for managing school operations. Designed
-              and developed with focus on usability and performance.
+              A comprehensive school management system featuring a powerful
+              admin dashboard alongside dedicated mobile apps for students,
+              teachers, and parents. Manages student, staff, and teacher
+              profiles with full attendance tracking, timetables, discipline
+              records, marks, and exam management. Includes library automation,
+              event organization, detailed reporting, and real-time
+              notifications for seamless communication across the entire school
+              community.
             </p>
 
             <!-- Tech Stack -->
@@ -283,22 +289,16 @@
               >
               <span
                 class="px-3 py-1 bg-zinc-900/80 border border-zinc-800 rounded-full text-zinc-400 text-xs hover:border-blue-500/50 hover:text-blue-400 transition-colors duration-300"
-                >Laravel API</span
+                >Firebase</span
               >
               <span
                 class="px-3 py-1 bg-zinc-900/80 border border-zinc-800 rounded-full text-zinc-400 text-xs hover:border-blue-500/50 hover:text-blue-400 transition-colors duration-300"
-                >REST</span
+                >Push Notifications</span
               >
             </div>
 
             <!-- Buttons -->
             <div class="flex gap-4">
-              <a
-                href="#"
-                class="px-5 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 transform hover:-translate-y-0.5 text-sm"
-              >
-                View Code
-              </a>
               <a
                 href="#"
                 class="px-5 py-2 border border-zinc-700 text-zinc-300 rounded-lg hover:border-blue-500 hover:text-blue-500 hover:bg-zinc-800/50 transition-all duration-300 text-sm"
@@ -320,9 +320,14 @@
             </h3>
 
             <p class="text-zinc-400 leading-relaxed mb-6">
-              A logistics platform connecting factories with transport
-              companies. Includes web dashboards, driver mobile app, real-time
-              tracking, and role-based system management.
+              A comprehensive logistics marketplace connecting factories with
+              transport companies. Factories post shipping requests while
+              companies submit competitive offers. Features real-time GPS driver
+              tracking on map, shipment status monitoring, and dedicated request
+              capabilities for ongoing partnerships. Includes a powerful admin
+              panel for system management, complaint handling, and full
+              operational monitoring, along with a dedicated mobile app for
+              drivers.
             </p>
 
             <!-- Tech Stack -->
@@ -349,12 +354,6 @@
             <div class="flex gap-4">
               <a
                 href="#"
-                class="px-5 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 transform hover:-translate-y-0.5 text-sm"
-              >
-                View Code
-              </a>
-              <a
-                href="#"
                 class="px-5 py-2 border border-zinc-700 text-zinc-300 rounded-lg hover:border-blue-500 hover:text-blue-500 hover:bg-zinc-800/50 transition-all duration-300 text-sm"
               >
                 Live Demo
@@ -379,7 +378,7 @@
               </video>
               <!-- Video overlay for hover -->
               <div
-                class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4 pointer-events-none"
+                class="absolute inset-0 bg-linear-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4 pointer-events-none"
               >
                 <span class="text-white text-sm font-medium">Watch Demo</span>
               </div>
@@ -392,13 +391,13 @@
                 class="relative rounded-xl overflow-hidden border border-zinc-800 bg-zinc-900 aspect-square group"
               >
                 <img
-                  src="/mockups/placeholder.svg"
+                  src="/mockups/trucklink1.jpg"
                   alt="TruckLink Screen 1"
                   class="w-full h-full object-cover cursor-pointer"
-                  @click="openLightbox('/mockups/placeholder.svg')"
+                  @click="openLightbox('/mockups/trucklink1.jpg')"
                 />
                 <div
-                  class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2 pointer-events-none"
+                  class="absolute inset-0 bg-linear-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2 pointer-events-none"
                 >
                   <span class="text-white text-xs font-medium">Screen 1</span>
                 </div>
@@ -409,13 +408,13 @@
                 class="relative rounded-xl overflow-hidden border border-zinc-800 bg-zinc-900 aspect-square group"
               >
                 <img
-                  src="/mockups/placeholder.svg"
+                  src="/mockups/trucklink2.jpg"
                   alt="TruckLink Screen 2"
                   class="w-full h-full object-cover cursor-pointer"
-                  @click="openLightbox('/mockups/placeholder.svg')"
+                  @click="openLightbox('/mockups/trucklink2.jpg')"
                 />
                 <div
-                  class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2 pointer-events-none"
+                  class="absolute inset-0 bg-linear-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2 pointer-events-none"
                 >
                   <span class="text-white text-xs font-medium">Screen 2</span>
                 </div>
@@ -426,13 +425,13 @@
                 class="relative rounded-xl overflow-hidden border border-zinc-800 bg-zinc-900 aspect-square group"
               >
                 <img
-                  src="/mockups/placeholder.svg"
+                  src="/mockups/trucklink3.png"
                   alt="TruckLink Screen 3"
                   class="w-full h-full object-cover cursor-pointer"
-                  @click="openLightbox('/mockups/placeholder.svg')"
+                  @click="openLightbox('/mockups/trucklink3.png')"
                 />
                 <div
-                  class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2 pointer-events-none"
+                  class="absolute inset-0 bg-linear-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2 pointer-events-none"
                 >
                   <span class="text-white text-xs font-medium">Screen 3</span>
                 </div>
@@ -460,7 +459,7 @@
               </video>
               <!-- Video overlay for hover -->
               <div
-                class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4 pointer-events-none"
+                class="absolute inset-0 bg-linear-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4 pointer-events-none"
               >
                 <span class="text-white text-sm font-medium">Watch Demo</span>
               </div>
@@ -479,7 +478,7 @@
                   @click="openLightbox('/mockups/emaniyat1.png')"
                 />
                 <div
-                  class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2 pointer-events-none"
+                  class="absolute inset-0 bg-linear-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2 pointer-events-none"
                 >
                   <span class="text-white text-xs font-medium">Screen 1</span>
                 </div>
@@ -496,7 +495,7 @@
                   @click="openLightbox('/mockups/emaniyat2.png')"
                 />
                 <div
-                  class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2 pointer-events-none"
+                  class="absolute inset-0 bg-linear-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2 pointer-events-none"
                 >
                   <span class="text-white text-xs font-medium">Screen 2</span>
                 </div>
@@ -513,7 +512,7 @@
                   @click="openLightbox('/mockups/emaniyat3.png')"
                 />
                 <div
-                  class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2 pointer-events-none"
+                  class="absolute inset-0 bg-linear-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2 pointer-events-none"
                 >
                   <span class="text-white text-xs font-medium">Screen 3</span>
                 </div>
@@ -530,9 +529,13 @@
             </h3>
 
             <p class="text-zinc-400 leading-relaxed mb-6">
-              A comprehensive platform for managing religious events and
-              gatherings. Includes event scheduling, participant management,
-              notifications, and reporting features.
+              An all-in-one Islamic application featuring Quran with multiple
+              reciters, bookmark management, and downloadable ayahs. Includes a
+              digital library of Islamic books with reading and download
+              options. Offers daily azkar and duas, Qiblah direction finder,
+              digital masbaha, Zakat calculator, nearest mosques locator, 99
+              Names of Allah, and an Islamic calendar for tracking important
+              dates and events.
             </p>
 
             <!-- Tech Stack -->
@@ -543,15 +546,11 @@
               >
               <span
                 class="px-3 py-1 bg-zinc-900/80 border border-zinc-800 rounded-full text-zinc-400 text-xs hover:border-blue-500/50 hover:text-blue-400 transition-colors duration-300"
-                >Vue Dashboard</span
+                >Firebase</span
               >
               <span
                 class="px-3 py-1 bg-zinc-900/80 border border-zinc-800 rounded-full text-zinc-400 text-xs hover:border-blue-500/50 hover:text-blue-400 transition-colors duration-300"
-                >Node.js</span
-              >
-              <span
-                class="px-3 py-1 bg-zinc-900/80 border border-zinc-800 rounded-full text-zinc-400 text-xs hover:border-blue-500/50 hover:text-blue-400 transition-colors duration-300"
-                >PostgreSQL</span
+                >GetX</span
               >
             </div>
 
@@ -560,12 +559,6 @@
               <a
                 href="#"
                 class="px-5 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 transform hover:-translate-y-0.5 text-sm"
-              >
-                View Code
-              </a>
-              <a
-                href="#"
-                class="px-5 py-2 border border-zinc-700 text-zinc-300 rounded-lg hover:border-blue-500 hover:text-blue-500 hover:bg-zinc-800/50 transition-all duration-300 text-sm"
               >
                 Live Demo
               </a>
