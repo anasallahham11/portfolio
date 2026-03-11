@@ -91,10 +91,16 @@
             <!-- Buttons -->
             <div class="flex gap-4">
               <a
-                href="#"
-                class="px-5 py-2 border border-zinc-700 text-zinc-300 rounded-lg hover:border-blue-500 hover:text-blue-500 hover:bg-zinc-800/50 transition-all duration-300 text-sm"
+                href="https://play.google.com/store/apps/details?id=site.rand.doremi.prod"
+                target="_blank"
+                class="px-5 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 transform hover:-translate-y-0.5 text-sm flex items-center gap-2"
               >
-                Live Demo
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                  <path
+                    d="M3.609 1.814L13.792 12 3.61 22.186a.996.996 0 0 1-.61-.92V2.734a1 1 0 0 1 .609-.92zm10.89 10.893l2.302 2.302-10.937 6.333 8.635-8.635zm3.199-3.198l2.807 1.626a1 1 0 0 1 0 1.73l-2.808 1.626L15.206 12l2.492-2.491zM5.864 2.658L16.8 8.99l-2.302 2.302-8.635-8.634z"
+                  />
+                </svg>
+                Get on Play Store
               </a>
             </div>
           </div>
@@ -299,12 +305,11 @@
 
             <!-- Buttons -->
             <div class="flex gap-4">
-              <a
-                href="#"
-                class="px-5 py-2 border border-zinc-700 text-zinc-300 rounded-lg hover:border-blue-500 hover:text-blue-500 hover:bg-zinc-800/50 transition-all duration-300 text-sm"
+              <span
+                class="px-5 py-2 border border-zinc-700 text-zinc-500 rounded-lg text-sm cursor-not-allowed"
               >
-                Live Demo
-              </a>
+                Coming Soon
+              </span>
             </div>
           </div>
         </div>
@@ -352,12 +357,11 @@
 
             <!-- Buttons -->
             <div class="flex gap-4">
-              <a
-                href="#"
-                class="px-5 py-2 border border-zinc-700 text-zinc-300 rounded-lg hover:border-blue-500 hover:text-blue-500 hover:bg-zinc-800/50 transition-all duration-300 text-sm"
+              <span
+                class="px-5 py-2 border border-zinc-700 text-zinc-500 rounded-lg text-sm cursor-not-allowed"
               >
-                Live Demo
-              </a>
+                Coming Soon
+              </span>
             </div>
           </div>
 
@@ -438,130 +442,129 @@
               </div>
             </div>
           </div>
-        </div>
 
-        <!-- Emaniyat -->
-        <div class="grid md:grid-cols-2 gap-12 items-center">
-          <!-- Mockup Gallery -->
-          <div class="space-y-4 order-1 md:order-0">
-            <!-- Video Container -->
-            <div
-              class="relative rounded-2xl overflow-hidden border border-zinc-800 bg-zinc-900 aspect-video group"
-            >
-              <video
-                class="w-full h-full object-cover"
-                autoplay
-                muted
-                loop
-                playsinline
-              >
-                <source src="/mockups/emaniyat.mp4" type="video/mp4" />
-              </video>
-              <!-- Video overlay for hover -->
+          <!-- Emaniyat -->
+          <div class="grid md:grid-cols-2 gap-12 items-center">
+            <!-- Mockup Gallery -->
+            <div class="space-y-4 order-1 md:order-0">
+              <!-- Video Container -->
               <div
-                class="absolute inset-0 bg-linear-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4 pointer-events-none"
+                class="relative rounded-2xl overflow-hidden border border-zinc-800 bg-zinc-900 aspect-video group"
               >
-                <span class="text-white text-sm font-medium">Watch Demo</span>
-              </div>
-            </div>
-
-            <!-- Mockup Images Grid -->
-            <div class="grid grid-cols-3 gap-4">
-              <!-- Mockup 1 -->
-              <div
-                class="relative rounded-xl overflow-hidden border border-zinc-800 bg-zinc-900 aspect-square group"
-              >
-                <img
-                  src="/mockups/emaniyat1.png"
-                  alt="Emaniyat Screen 1"
-                  class="w-full h-full object-cover cursor-pointer"
-                  @click="openLightbox('/mockups/emaniyat1.png')"
-                />
-                <div
-                  class="absolute inset-0 bg-linear-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2 pointer-events-none"
+                <video
+                  class="w-full h-full object-cover"
+                  autoplay
+                  muted
+                  loop
+                  playsinline
                 >
-                  <span class="text-white text-xs font-medium">Screen 1</span>
+                  <source src="/mockups/emaniyat.mp4" type="video/mp4" />
+                </video>
+                <!-- Video overlay for hover -->
+                <div
+                  class="absolute inset-0 bg-linear-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4 pointer-events-none"
+                >
+                  <span class="text-white text-sm font-medium">Watch Demo</span>
                 </div>
               </div>
 
-              <!-- Mockup 2 -->
-              <div
-                class="relative rounded-xl overflow-hidden border border-zinc-800 bg-zinc-900 aspect-square group"
-              >
-                <img
-                  src="/mockups/emaniyat2.png"
-                  alt="Emaniyat Screen 2"
-                  class="w-full h-full object-cover cursor-pointer"
-                  @click="openLightbox('/mockups/emaniyat2.png')"
-                />
+              <!-- Mockup Images Grid -->
+              <div class="grid grid-cols-3 gap-4">
+                <!-- Mockup 1 -->
                 <div
-                  class="absolute inset-0 bg-linear-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2 pointer-events-none"
+                  class="relative rounded-xl overflow-hidden border border-zinc-800 bg-zinc-900 aspect-square group"
                 >
-                  <span class="text-white text-xs font-medium">Screen 2</span>
+                  <img
+                    src="/mockups/emaniyat1.png"
+                    alt="Emaniyat Screen 1"
+                    class="w-full h-full object-cover cursor-pointer"
+                    @click="openLightbox('/mockups/emaniyat1.png')"
+                  />
+                  <div
+                    class="absolute inset-0 bg-linear-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2 pointer-events-none"
+                  >
+                    <span class="text-white text-xs font-medium">Screen 1</span>
+                  </div>
                 </div>
-              </div>
 
-              <!-- Mockup 3 -->
-              <div
-                class="relative rounded-xl overflow-hidden border border-zinc-800 bg-zinc-900 aspect-square group"
-              >
-                <img
-                  src="/mockups/emaniyat3.png"
-                  alt="Emaniyat Screen 3"
-                  class="w-full h-full object-cover cursor-pointer"
-                  @click="openLightbox('/mockups/emaniyat3.png')"
-                />
+                <!-- Mockup 2 -->
                 <div
-                  class="absolute inset-0 bg-linear-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2 pointer-events-none"
+                  class="relative rounded-xl overflow-hidden border border-zinc-800 bg-zinc-900 aspect-square group"
                 >
-                  <span class="text-white text-xs font-medium">Screen 3</span>
+                  <img
+                    src="/mockups/emaniyat2.png"
+                    alt="Emaniyat Screen 2"
+                    class="w-full h-full object-cover cursor-pointer"
+                    @click="openLightbox('/mockups/emaniyat2.png')"
+                  />
+                  <div
+                    class="absolute inset-0 bg-linear-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2 pointer-events-none"
+                  >
+                    <span class="text-white text-xs font-medium">Screen 2</span>
+                  </div>
+                </div>
+
+                <!-- Mockup 3 -->
+                <div
+                  class="relative rounded-xl overflow-hidden border border-zinc-800 bg-zinc-900 aspect-square group"
+                >
+                  <img
+                    src="/mockups/emaniyat3.png"
+                    alt="Emaniyat Screen 3"
+                    class="w-full h-full object-cover cursor-pointer"
+                    @click="openLightbox('/mockups/emaniyat3.png')"
+                  />
+                  <div
+                    class="absolute inset-0 bg-linear-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2 pointer-events-none"
+                  >
+                    <span class="text-white text-xs font-medium">Screen 3</span>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
 
-          <!-- Text -->
-          <div>
-            <h3
-              class="text-2xl text-white mb-4 group-hover:text-blue-400 transition-colors duration-300"
-            >
-              Emaniyat
-            </h3>
+            <!-- Text -->
+            <div>
+              <h3
+                class="text-2xl text-white mb-4 group-hover:text-blue-400 transition-colors duration-300"
+              >
+                Emaniyat
+              </h3>
 
-            <p class="text-zinc-400 leading-relaxed mb-6">
-              An all-in-one Islamic application featuring Quran with multiple
-              reciters, bookmark management, and downloadable ayahs. Includes a
-              digital library of Islamic books with reading and download
-              options. Offers daily azkar and duas, Qiblah direction finder,
-              digital masbaha, Zakat calculator, nearest mosques locator, 99
-              Names of Allah, and an Islamic calendar for tracking important
-              dates and events.
-            </p>
+              <p class="text-zinc-400 leading-relaxed mb-6">
+                An all-in-one Islamic application featuring Quran with multiple
+                reciters, bookmark management, and downloadable ayahs. Includes
+                a digital library of Islamic books with reading and download
+                options. Offers daily azkar and duas, Qiblah direction finder,
+                digital masbaha, Zakat calculator, nearest mosques locator, 99
+                Names of Allah, and an Islamic calendar for tracking important
+                dates and events.
+              </p>
 
-            <!-- Tech Stack -->
-            <div class="flex flex-wrap gap-2 mb-6">
-              <span
-                class="px-3 py-1 bg-zinc-900/80 border border-zinc-800 rounded-full text-zinc-400 text-xs hover:border-blue-500/50 hover:text-blue-400 transition-colors duration-300"
-                >Flutter</span
-              >
-              <span
-                class="px-3 py-1 bg-zinc-900/80 border border-zinc-800 rounded-full text-zinc-400 text-xs hover:border-blue-500/50 hover:text-blue-400 transition-colors duration-300"
-                >Firebase</span
-              >
-              <span
-                class="px-3 py-1 bg-zinc-900/80 border border-zinc-800 rounded-full text-zinc-400 text-xs hover:border-blue-500/50 hover:text-blue-400 transition-colors duration-300"
-                >GetX</span
-              >
-            </div>
+              <!-- Tech Stack -->
+              <div class="flex flex-wrap gap-2 mb-6">
+                <span
+                  class="px-3 py-1 bg-zinc-900/80 border border-zinc-800 rounded-full text-zinc-400 text-xs hover:border-blue-500/50 hover:text-blue-400 transition-colors duration-300"
+                  >Flutter</span
+                >
+                <span
+                  class="px-3 py-1 bg-zinc-900/80 border border-zinc-800 rounded-full text-zinc-400 text-xs hover:border-blue-500/50 hover:text-blue-400 transition-colors duration-300"
+                  >Firebase</span
+                >
+                <span
+                  class="px-3 py-1 bg-zinc-900/80 border border-zinc-800 rounded-full text-zinc-400 text-xs hover:border-blue-500/50 hover:text-blue-400 transition-colors duration-300"
+                  >GetX</span
+                >
+              </div>
 
-            <!-- Buttons -->
-            <div class="flex gap-4">
-              <a
-                href="#"
-                class="px-5 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 hover:shadow-lg hover:shadow-blue-500/25 transition-all duration-300 transform hover:-translate-y-0.5 text-sm"
-              >
-                Live Demo
-              </a>
+              <!-- Buttons -->
+              <div class="flex gap-4">
+                <span
+                  class="px-5 py-2 border border-zinc-700 text-zinc-500 rounded-lg text-sm cursor-not-allowed"
+                >
+                  Coming Soon
+                </span>
+              </div>
             </div>
           </div>
         </div>
