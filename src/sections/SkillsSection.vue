@@ -96,6 +96,24 @@
               <span class="w-1.5 h-1.5 bg-blue-500 rounded-full"></span>
               State Management (BLoC, GetX)
             </li>
+            <li
+              class="flex items-center gap-3 group-hover:translate-x-1 transition-transform duration-300"
+            >
+              <span class="w-1.5 h-1.5 bg-blue-500 rounded-full"></span>
+              Firebase
+            </li>
+            <li
+              class="flex items-center gap-3 group-hover:translate-x-1 transition-transform duration-300"
+            >
+              <span class="w-1.5 h-1.5 bg-blue-500 rounded-full"></span>
+              Google Maps
+            </li>
+            <li
+              class="flex items-center gap-3 group-hover:translate-x-1 transition-transform duration-300"
+            >
+              <span class="w-1.5 h-1.5 bg-blue-500 rounded-full"></span>
+              NFC
+            </li>
           </ul>
         </div>
 
@@ -239,6 +257,18 @@
             >
               <span class="w-1.5 h-1.5 bg-blue-500 rounded-full"></span>
               Agile Workflow
+            </li>
+            <li
+              class="flex items-center gap-3 group-hover:translate-x-1 transition-transform duration-300"
+            >
+              <span class="w-1.5 h-1.5 bg-blue-500 rounded-full"></span>
+              API Design & Documentation
+            </li>
+            <li
+              class="flex items-center gap-3 group-hover:translate-x-1 transition-transform duration-300"
+            >
+              <span class="w-1.5 h-1.5 bg-blue-500 rounded-full"></span>
+              Performance Optimization
             </li>
           </ul>
         </div>
