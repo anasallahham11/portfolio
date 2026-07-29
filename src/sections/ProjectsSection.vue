@@ -184,7 +184,7 @@
           </div>
         </div>
 
-        <!-- eSchool -->
+        <!-- EduGate -->
         <div class="grid md:grid-cols-2 gap-12 items-center">
           <!-- Mockup Gallery -->
           <div class="space-y-4 order-1 md:order-0">
@@ -199,7 +199,7 @@
                 loop
                 playsinline
               >
-                <source src="/mockups/eschool.mp4" type="video/mp4" />
+                <source src="/mockups/edugate.mp4" type="video/mp4" />
               </video>
               <!-- Video overlay for hover -->
               <div
@@ -215,12 +215,12 @@
               <div
                 class="relative rounded-xl overflow-hidden border border-zinc-800 bg-zinc-900 aspect-square group"
               >
-                <img
-                  src="/mockups/eschool1.png"
-                  alt="eSchool Screen 1"
-                  class="w-full h-full object-cover cursor-pointer"
-                  @click="openLightbox('/mockups/eschool1.png')"
-                />
+                 <img
+                   src="/mockups/edugate1.png"
+                   alt="EduGate Screen 1"
+                   class="w-full h-full object-cover cursor-pointer"
+                   @click="openLightbox('/mockups/edugate1.png')"
+                 />
                 <div
                   class="absolute inset-0 bg-linear-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2 pointer-events-none"
                 >
@@ -232,12 +232,12 @@
               <div
                 class="relative rounded-xl overflow-hidden border border-zinc-800 bg-zinc-900 aspect-square group"
               >
-                <img
-                  src="/mockups/eschool2.png"
-                  alt="eSchool Screen 2"
-                  class="w-full h-full object-cover cursor-pointer"
-                  @click="openLightbox('/mockups/eschool2.png')"
-                />
+                 <img
+                   src="/mockups/edugate2.png"
+                   alt="EduGate Screen 2"
+                   class="w-full h-full object-cover cursor-pointer"
+                   @click="openLightbox('/mockups/edugate2.png')"
+                 />
                 <div
                   class="absolute inset-0 bg-linear-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2 pointer-events-none"
                 >
@@ -249,12 +249,12 @@
               <div
                 class="relative rounded-xl overflow-hidden border border-zinc-800 bg-zinc-900 aspect-square group"
               >
-                <img
-                  src="/mockups/eschool3.jpg"
-                  alt="eSchool Screen 3"
-                  class="w-full h-full object-cover cursor-pointer"
-                  @click="openLightbox('/mockups/eschool3.jpg')"
-                />
+                 <img
+                   src="/mockups/edugate3.png"
+                   alt="EduGate Screen 3"
+                   class="w-full h-full object-cover cursor-pointer"
+                   @click="openLightbox('/mockups/edugate3.png')"
+                 />
                 <div
                   class="absolute inset-0 bg-linear-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-2 pointer-events-none"
                 >
@@ -269,7 +269,7 @@
             <h3
               class="text-2xl text-white mb-4 group-hover:text-blue-400 transition-colors duration-300"
             >
-              eSchool System
+              EduGate
             </h3>
 
             <p class="text-zinc-400 leading-relaxed mb-6">
